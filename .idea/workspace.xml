@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1jhNmebAjPnKmLUtwqxKBrMTgXY" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="" />
+      <created>1604252525587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604252525587</updated>
+      <workItem from="1604252527282" duration="4263000" />
+      <workItem from="1604499969347" duration="586000" />
+      <workItem from="1604523399921" duration="8003000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="400" y="210" width="558" height="314" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1604523425297">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="400" y="210" width="558" height="314" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.731@0.0.1366.731" timestamp="1604523425297" />
+    <state x="416" y="117" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604252792718">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="416" y="117" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604252792718" />
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604253310520">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604253310520" />
+    <state x="466" y="124" width="426" height="487" key="FileChooserDialogImpl" timestamp="1604523739080">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="466" y="124" width="426" height="487" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1604523739080" />
+    <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog" timestamp="1604253226283">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604253226283" />
+  </component>
+</project>
