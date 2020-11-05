@@ -19,16 +19,16 @@
                             <tbody>
                             @foreach($paginator as $item)
                                 @php /** @var \App\Models\Blog\BlogCategory $item **/ @endphp
-                            <tr>
-                                <td>{{$item->id}}</td>
-                                <td>
+                                <tr>
+                                    <td>{{$item->id}}</td>
+                                    <td>
 
-                                    <a href="{{route('blog.admin.categories.edit', $item->id)}}">{{$item->title}}</a>
-                                </td>
-                                <td @if(in_array($item->parent_id,[0,1])) style="" @endif>
-                                    {{$item->parent_id}}
-                                </td>
-                            </tr>
+                                        <a href="{{route('blog.admin.categories.edit', $item->id)}}">{{$item->title}}</a>
+                                    </td>
+                                    <td @if(in_array($item->parent_id,[0,1])) style="color: #ccc" @endif>
+                                        {{$item->parent_id}}
+                                    </td>
+                                </tr>
                             </tbody>
                             @endforeach
                         </table>
@@ -38,8 +38,6 @@
         </div>
         @if($paginator->total()>$paginator->count())
             <br>
-{{--        {{}}--}}
-            @php /** @var Illuminate\Pagination\Paginator $paginator **/ @endphp
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="card">
