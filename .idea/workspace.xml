@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_add_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/FabiozZz/polygon.local" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1jhNmebAjPnKmLUtwqxKBrMTgXY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,8 +86,17 @@
       <workItem from="1604252527282" duration="4263000" />
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
-      <workItem from="1604606668991" duration="8329000" />
+      <workItem from="1604606668991" duration="8581000" />
+      <workItem from="1604709761179" duration="3254000" />
     </task>
+    <task id="LOCAL-00001" summary="Изменения после №18 видео">
+      <created>1604616972923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604616972923</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +112,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Изменения после №18 видео" />
@@ -127,9 +139,17 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="426" height="487" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1604523739080" />
+    <state width="753" height="339" key="Git.Branch.Popup" timestamp="1604617155135">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="753" height="339" key="Git.Branch.Popup/0.0.1366.731@0.0.1366.731" timestamp="1604617155135" />
     <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog" timestamp="1604253226283">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604253226283" />
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604616978101">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604616978101" />
   </component>
 </project>

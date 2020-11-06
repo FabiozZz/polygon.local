@@ -14,7 +14,7 @@
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">x</span>
                             </button>
-                            {!! dd($errors->all(':message')) !!}
+                            {{ $errors->first() }}
                         </div>
                     </div>
                 </div>
