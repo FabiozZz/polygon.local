@@ -25,8 +25,9 @@
                     <div class="col-md-11">
                         <div class="alert alert-success" role="alert">
                             <button type="button" class="close">
-                                <span></span>
+                                <span aria-hidden="true">x</span>
                             </button>
+                            {{session()->get('success')}}
                         </div>
                     </div>
                 </div>
