@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
+use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Models\Blog\BlogCategory;
 use Dotenv\Validator;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class CategoryController extends BaseController
 {
@@ -21,7 +23,6 @@ class CategoryController extends BaseController
         $paginator = BlogCategory::paginate(15);
         return view('blog.admin.categories.index', compact('paginator'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +30,10 @@ class CategoryController extends BaseController
      */
     public function create()
     {
-        dd(__METHOD__);
+        $item = new BlogCategory();
+        $categoryList = BlogCategory::all();
+        return view('blog.admin.categories.edit',
+            compact('item', 'categoryList'));
     }
 
     /**
@@ -38,9 +42,24 @@ class CategoryController extends BaseController
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BlogCategoryCreateRequest $request)
     {
-        dd(__METHOD__);
+        $data = $request->input();
+        if (empty($data['slug'])) {
+            $data['slug'] = Str::slug($data['title']);
+        }else {
+            $data['slug'] = Str::slug($data['slug']);
+        }
+        $item = new BlogCategory($data);
+
+        $results = $item->update($data);
+
+        if ($results) {
+            return redirect()->route('blog.admin.categories.edit', [$item->id])
+                ->with(['success' => 'Успешно сохранено']);
+        }else{
+            return back()->withErrors(['msg' => 'Ошибка сохранения'])->withInput();
+        }
     }
 
     /**
@@ -93,6 +112,11 @@ class CategoryController extends BaseController
                 ->withInput();
         }
         $data = $request->all();
+        if (empty($data['slug'])) {
+            $data['slug'] = Str::slug($data['title']);
+        }else {
+            $data['slug'] = Str::slug($data['slug']);
+        }
         $result = $item->fill($data)->save();
         if ($result) {
             return redirect()

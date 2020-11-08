@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №20. создан объект валидации">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/routes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
       <workItem from="1604606668991" duration="8581000" />
-      <workItem from="1604709761179" duration="7824000" />
+      <workItem from="1604709761179" duration="12793000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -103,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604704783189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="видео №20. создан объект валидации">
+      <created>1604790317014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604790317014</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +132,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Изменения после №18 видео" />
     <MESSAGE value="Изменен модель блога категорий, объяснили работу метода обновления контроллера категорий" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменен модель блога категорий, объяснили работу метода обновления контроллера категорий" />
+    <MESSAGE value="видео №20. создан объект валидации" />
+    <option name="LAST_COMMIT_MESSAGE" value="видео №20. создан объект валидации" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="160" width="564" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604611799976">
@@ -159,9 +168,9 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604253226283" />
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604704787456">
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604790319265">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604704787456" />
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604790319265" />
   </component>
 </project>

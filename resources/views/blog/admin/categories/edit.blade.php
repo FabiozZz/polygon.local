@@ -1,8 +1,14 @@
 @extends('layouts.app')
 @section('content')
     @php /** @var \App\Models\Blog\BlogCategory $item */ @endphp
-    <form action="{{route('blog.admin.categories.update', $item->id)}}" method="post">
-        @method('PATCH')
+    @if($item->exists)
+        <form action="{{route('blog.admin.categories.update', $item->id)}}" method="post">
+            @method('PATCH')
+    @else
+        <form action="{{route('blog.admin.categories.store')}}" method="post">
+    @endif
+
+
         @csrf
         <div class="container">
             @php /** @var \Illuminate\Support\ViewErrorBag $errors */ @endphp
