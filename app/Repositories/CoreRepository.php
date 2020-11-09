@@ -4,6 +4,7 @@
 namespace App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Query\Builder;
 use Illuminate\Foundation\Application;
 
 /**
@@ -35,7 +36,8 @@ abstract class CoreRepository
      */
     abstract protected function getModelClass();
     /**
-     * @return Model | Application | mixed
+     *
+     * @return Model | Application | Builder | mixed
      */
     protected function startConditions(){
         return clone $this->model;

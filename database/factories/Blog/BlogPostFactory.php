@@ -30,7 +30,7 @@ class BlogPostFactory extends Factory
             '-2 days');
         return [
             'category_id' => rand(1, 11),
-            'users_id' => (rand(1, 5) == 5) ? 1 : 2,
+            'user_id' => (rand(1, 5) == 5) ? 1 : 2,
             'title' => $title,
             'slug' => Str::slug($title),
             'except' => $this->faker->text(rand(40, 100)),

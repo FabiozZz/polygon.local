@@ -20,11 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №30.">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/BlogCategoriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/Blog/BlogPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/Blog/BlogPostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_223918_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_223918_create_blog_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/routes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,19 +64,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog/admin/includes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/blog/admin/categories" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repositories" />
       <recent name="$PROJECT_DIR$/resources/views/blog/admin/includes" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app/Models" />
-      <recent name="$PROJECT_DIR$/database/migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/blog/admin/categories" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,7 +97,7 @@
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
       <workItem from="1604606668991" duration="8581000" />
-      <workItem from="1604709761179" duration="25921000" />
+      <workItem from="1604709761179" duration="40588000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -117,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604922141154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="видео №30.">
+      <created>1604922447012</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604922447012</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,14 +184,14 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="466" y="124" width="426" height="487" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1604523739080" />
-    <state width="753" height="339" key="Git.Branch.Popup" timestamp="1604617155135">
+    <state width="755" height="341" key="Git.Branch.Popup" timestamp="1604953008020">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state width="753" height="339" key="Git.Branch.Popup/0.0.1366.731@0.0.1366.731" timestamp="1604617155135" />
-    <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog" timestamp="1604909834935">
+    <state width="755" height="341" key="Git.Branch.Popup/0.0.1366.731@0.0.1366.731" timestamp="1604953008020" />
+    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog" timestamp="1604924656371">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604909834935" />
+    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604924656371" />
     <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604922143125">
       <screen x="0" y="0" width="1366" height="731" />
     </state>

@@ -31,6 +31,7 @@
                                    name="slug"
                                    class="form-control">
                         </div>
+                        @if($item->id != 1)
                         <div class="form-group">
                             <label for="parent_id">Родитель</label>
                             <select id="parent_id"
@@ -39,14 +40,17 @@
                                     class="form-control"
                                     required>
                                 @foreach($categoryList as $categoryOption)
+                                    @if($item->id <> $categoryOption->id)
                                     <option value="{{$categoryOption->id}}"
                                             @if($categoryOption->id == $item->parent_id) selected @endif>
                                         {{--{{$categoryOption->id}}. {{$categoryOption->title}}--}}
                                         {{$categoryOption->id_title}}
                                     </option>
+                                    @endif
                                 @endforeach
                             </select>
                         </div>
+                        @endif
 
                         <div class="form-group">
                             <label for="description">Описание</label>
