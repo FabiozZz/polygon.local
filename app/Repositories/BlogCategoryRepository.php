@@ -23,6 +23,7 @@ class BlogCategoryRepository extends CoreRepository
     {
         return Model::class;
     }
+
     /**
      * Получить модель для редактирования в админке
      * @param int $id
@@ -40,10 +41,9 @@ class BlogCategoryRepository extends CoreRepository
      */
     public function getForComboBox()
     {
-//        return $this->startConditions()->all();
-        $columns = implode(',',[
+        $columns = implode(',', [
             'id',
-            'CONCAT (id, ". ", title) AS id_title',
+            'CONCAT (id, ". ", title) AS id_plus_title',
         ]);
 
         $result = $this
@@ -53,6 +53,7 @@ class BlogCategoryRepository extends CoreRepository
             ->get();
         return $result;
     }
+
     /**
      * Получить категории для вывода пагинатора
      *

@@ -19,22 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №30.">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
+    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию">
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/Blog/BlogPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/Blog/BlogPostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_223918_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_223918_create_blog_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
       <workItem from="1604606668991" duration="8581000" />
-      <workItem from="1604709761179" duration="40588000" />
+      <workItem from="1604709761179" duration="47248000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -134,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604922447012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию">
+      <created>1604956696097</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604956696097</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +158,8 @@
     <MESSAGE value="Изменен модель блога категорий, объяснили работу метода обновления контроллера категорий" />
     <MESSAGE value="видео №20. создан объект валидации" />
     <MESSAGE value="видео №30." />
-    <option name="LAST_COMMIT_MESSAGE" value="видео №30." />
+    <MESSAGE value="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию" />
+    <option name="LAST_COMMIT_MESSAGE" value="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="160" width="564" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604611799976">
@@ -172,10 +174,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="416" y="117" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604252792718" />
-    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604253310520">
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604957430276">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604253310520" />
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604957430276" />
     <state x="99" y="100" width="1168" height="532" key="DiffContextDialog" timestamp="1604913119018">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -196,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604922143125" />
-    <state x="380" y="106" width="606" height="520" key="find.popup" timestamp="1604916044443">
+    <state x="380" y="106" width="606" height="520" key="find.popup" timestamp="1604958802387">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="380" y="106" width="606" height="520" key="find.popup/0.0.1366.731@0.0.1366.731" timestamp="1604916044443" />
+    <state x="380" y="106" width="606" height="520" key="find.popup/0.0.1366.731@0.0.1366.731" timestamp="1604958802387" />
     <state x="405" y="138" width="547" height="458" key="refactoring.ChangeSignatureDialog" timestamp="1604921766966">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
