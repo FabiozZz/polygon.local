@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №20. создан объект валидации">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/CoreRepository.php" afterDir="false" />
+    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №30.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/BlogCategoriesTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,7 @@
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
       <workItem from="1604606668991" duration="8581000" />
-      <workItem from="1604709761179" duration="25457000" />
+      <workItem from="1604709761179" duration="25921000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -112,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604790317014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="видео №30.">
+      <created>1604922141154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604922141154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +139,8 @@
     <MESSAGE value="Изменения после №18 видео" />
     <MESSAGE value="Изменен модель блога категорий, объяснили работу метода обновления контроллера категорий" />
     <MESSAGE value="видео №20. создан объект валидации" />
-    <option name="LAST_COMMIT_MESSAGE" value="видео №20. создан объект валидации" />
+    <MESSAGE value="видео №30." />
+    <option name="LAST_COMMIT_MESSAGE" value="видео №30." />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="160" width="564" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604611799976">
@@ -169,10 +175,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="357" y="79" width="644" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604909834935" />
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604790319265">
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604922143125">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604790319265" />
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604922143125" />
     <state x="380" y="106" width="606" height="520" key="find.popup" timestamp="1604916044443">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
