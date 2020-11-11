@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\BlogPostCreateRequest;
 use App\Http\Requests\BlogPostUpdateRequest;
 use App\Models\Blog\BlogPost;
@@ -11,10 +10,9 @@ use App\Repositories\BlogPostRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Pagination\Paginator;
-use Symfony\Component\Console\Helper\Helper;
 
 /** Управление статьями блога
  *
@@ -72,13 +70,13 @@ class PostController extends BaseController
      * Store a newly created resource in storage.
      *
      * @param BlogPostCreateRequest $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function store(BlogPostCreateRequest $request)
     {
         $data = $request->input();
 //        $item = new BlogPost($data);
-        $item = (new BlogPost())->create($data);
+        $item = new BlogPost($data);
 
         if ($item) {
             return redirect()
@@ -95,9 +93,8 @@ class PostController extends BaseController
      * Display the specified resource.
      *
      * @param int $id
-     * @return Response
      */
-    public function show($id)
+    public function show(int $id)
     {
         dd(__METHOD__, $id);
         //
@@ -125,11 +122,11 @@ class PostController extends BaseController
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param BlogPostUpdateRequest $request
      * @param int $id
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
-    public function update(BlogPostUpdateRequest $request, $id)
+    public function update(BlogPostUpdateRequest $request, int $id)
     {
         $item = $this->blogPostRepository->getEdit($id);
         if (empty($item)) {
@@ -154,11 +151,10 @@ class PostController extends BaseController
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return Response
      */
-    public function destroy($id)
+    public function destroy(int $id)
     {
-        dd(__METHOD__, $id, \request()->all());
+        dd(__METHOD__, $id, request()->all());
         //
     }
 }

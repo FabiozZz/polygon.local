@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @package App\Models\Blog
  *
  * @property string $title
+ * @property integer $id
  * @property string $slug
  * @property integer $parent_id
  * @property string $description

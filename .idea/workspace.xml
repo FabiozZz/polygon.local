@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №39">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostUpdateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +44,9 @@
         <option value="https://github.com/FabiozZz/polygon.local" />
       </set>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
   </component>
   <component name="ProjectId" id="1jhNmebAjPnKmLUtwqxKBrMTgXY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -95,7 +94,7 @@
       <workItem from="1604606668991" duration="8581000" />
       <workItem from="1604709761179" duration="49242000" />
       <workItem from="1605006066492" duration="15072000" />
-      <workItem from="1605127518439" duration="401000" />
+      <workItem from="1605127518439" duration="1487000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -210,6 +209,26 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="755" height="341" key="Git.Branch.Popup/0.0.1366.731@0.0.1366.731" timestamp="1604953008020" />
+    <state width="906" height="164" key="GridCell.Tab.0.bottom" timestamp="1605128752577">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="906" height="164" key="GridCell.Tab.0.bottom/0.0.1366.731@0.0.1366.731" timestamp="1605128752577" />
+    <state width="906" height="164" key="GridCell.Tab.0.center" timestamp="1605128752575">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="906" height="164" key="GridCell.Tab.0.center/0.0.1366.731@0.0.1366.731" timestamp="1605128752575" />
+    <state width="906" height="164" key="GridCell.Tab.0.left" timestamp="1605128752574">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="906" height="164" key="GridCell.Tab.0.left/0.0.1366.731@0.0.1366.731" timestamp="1605128752574" />
+    <state width="906" height="164" key="GridCell.Tab.0.right" timestamp="1605128752576">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="906" height="164" key="GridCell.Tab.0.right/0.0.1366.731@0.0.1366.731" timestamp="1605128752576" />
+    <state width="176" height="537" key="HiddenNamespacesPopup" timestamp="1605127930620">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state width="176" height="537" key="HiddenNamespacesPopup/0.0.1366.731@0.0.1366.731" timestamp="1605127930620" />
     <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog" timestamp="1605009077295">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -218,6 +237,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604963225185" />
+    <state x="549" y="86" width="260" height="562" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605127999815">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="549" y="86" width="260" height="562" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.731@0.0.1366.731" timestamp="1605127999815" />
     <state x="380" y="106" width="606" height="520" key="find.popup" timestamp="1604958802387">
       <screen x="0" y="0" width="1366" height="731" />
     </state>

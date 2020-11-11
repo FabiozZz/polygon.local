@@ -6,10 +6,11 @@ use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Models\Blog\BlogCategory;
 use App\Repositories\BlogCategoryRepository;
-use Dotenv\Validator;
-use Illuminate\Auth\Events\Validated;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Response;
 use Illuminate\Support\Str;
 
 /**
@@ -34,7 +35,7 @@ class CategoryController extends BaseController
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function index()
     {
@@ -46,7 +47,7 @@ class CategoryController extends BaseController
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function create()
     {
@@ -61,7 +62,7 @@ class CategoryController extends BaseController
      * Store a newly created resource in storage.
      *
      * @param BlogCategoryCreateRequest $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function store(BlogCategoryCreateRequest $request)
     {
@@ -86,7 +87,7 @@ class CategoryController extends BaseController
      * Display the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
 //    public function show($id)
 //    {
@@ -97,8 +98,7 @@ class CategoryController extends BaseController
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @param BlogCategoryRepository $categoryRepository
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function edit(int $id)
     {
@@ -116,9 +116,9 @@ class CategoryController extends BaseController
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param BlogCategoryUpdateRequest $request
      * @param int $id
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function update(BlogCategoryUpdateRequest $request, int $id)
     {
@@ -159,7 +159,7 @@ class CategoryController extends BaseController
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
 //    public function destroy($id)
 //    {

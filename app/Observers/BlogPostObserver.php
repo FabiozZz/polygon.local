@@ -12,7 +12,7 @@ class BlogPostObserver
     /**
      * обработка ПЕРЕД созданием записи.
      *
-     * @param \App\Models\Blog\BlogPost $blogPost
+     * @param BlogPost $blogPost
      */
     public function creating(BlogPost $blogPost)
     {
@@ -25,7 +25,7 @@ class BlogPostObserver
     /**
      * обработка ПЕРЕД обновлением записи.
      *
-     * @param \App\Models\Blog\BlogPost $blogPost
+     * @param BlogPost $blogPost
      */
     public function updating(BlogPost $blogPost)
     {
@@ -62,7 +62,7 @@ class BlogPostObserver
     /**
      * Handle the BlogPost "deleted" event.
      *
-     * @param \App\Models\Blog\BlogPost $blogPost
+     * @param BlogPost $blogPost
      * @return void
      */
     public function deleted(BlogPost $blogPost)
@@ -73,7 +73,7 @@ class BlogPostObserver
     /**
      * Handle the BlogPost "restored" event.
      *
-     * @param \App\Models\Blog\BlogPost $blogPost
+     * @param BlogPost $blogPost
      * @return void
      */
     public function restored(BlogPost $blogPost)
@@ -84,7 +84,7 @@ class BlogPostObserver
     /**
      * Handle the BlogPost "force deleted" event.
      *
-     * @param \App\Models\Blog\BlogPost $blogPost
+     * @param BlogPost $blogPost
      * @return void
      */
     public function forceDeleted(BlogPost $blogPost)

@@ -12,8 +12,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @package App\Models\Blog
  *
  * @property BlogCategory $category
- * @property User $use_id
+ * @property User $user_id
  * @property string $title
+ * @property integer $id
  * @property string $slug
  * @property string $content_html
  * @property string $content_raw
@@ -33,7 +34,7 @@ class BlogPost extends Model
         'except',
         'content_raw',
         'is_published',
-        'published_at',
+        'published_at'
     ];
     const UNKNOWN_USER = 1;
     /**
