@@ -3,11 +3,18 @@
 namespace App\Http\Controllers\Blog\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BlogPostCreateRequest;
+use App\Http\Requests\BlogPostUpdateRequest;
+use App\Models\Blog\BlogPost;
 use App\Repositories\BlogCategoryRepository;
 use App\Repositories\BlogPostRepository;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Pagination\Paginator;
-
+use Symfony\Component\Console\Helper\Helper;
 
 /** Управление статьями блога
  *
@@ -39,7 +46,7 @@ class PostController extends BaseController
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Paginator
+     * @return Application|Factory|View|Paginator
      */
     public function index()
     {
@@ -51,31 +58,44 @@ class PostController extends BaseController
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function create()
     {
-        dd(__METHOD__);
-        //
+        $item = new BlogPost();
+        $categoryList = $this->blogCategoryRepository->getForComboBox();
+        return view('blog.admin.posts.edit',
+            compact('item', 'categoryList'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @param BlogPostCreateRequest $request
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(BlogPostCreateRequest $request)
     {
-        dd(__METHOD__);
-        //
+        $data = $request->input();
+//        $item = new BlogPost($data);
+        $item = (new BlogPost())->create($data);
+
+        if ($item) {
+            return redirect()
+                ->route('blog.admin.posts.edit', $item->id)
+                ->with(['success' => 'Успешно сохранено']);
+        } else {
+            return back()
+                ->withErrors(['msg' => 'Ошибка сохранения'])
+                ->withInput();
+        }
     }
 
     /**
      * Display the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show($id)
     {
@@ -87,7 +107,7 @@ class PostController extends BaseController
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function edit(int $id)
     {
@@ -107,20 +127,34 @@ class PostController extends BaseController
      *
      * @param \Illuminate\Http\Request $request
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(BlogPostUpdateRequest $request, $id)
     {
-
-        dd(__METHOD__, $id, $request->all());
-        //
+        $item = $this->blogPostRepository->getEdit($id);
+        if (empty($item)) {
+            return back()
+                ->withErrors(['msg' => "Запись id = [{$id}] не найдена"])
+                ->withInput();
+        }
+        $data = $request->all();
+        $result = $item->update($data);
+        if ($result) {
+            return redirect()
+                ->route('blog.admin.posts.edit', $item->id)
+                ->with(['success' => 'Успешно сохранено']);
+        } else {
+            return back()
+                ->withErrors(['msg' => 'Ошибка сохранения'])
+                ->withInput();
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {

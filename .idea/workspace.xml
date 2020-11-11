@@ -19,16 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" afterDir="false" />
+    <list default="true" id="4f9f8fe9-0352-4bbf-8250-15af28b7c939" name="Default Changelist" comment="видео №39">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostUpdateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_message.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
@@ -91,7 +93,9 @@
       <workItem from="1604499969347" duration="586000" />
       <workItem from="1604523399921" duration="8003000" />
       <workItem from="1604606668991" duration="8581000" />
-      <workItem from="1604709761179" duration="47248000" />
+      <workItem from="1604709761179" duration="49242000" />
+      <workItem from="1605006066492" duration="15072000" />
+      <workItem from="1605127518439" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="Изменения после №18 видео">
       <created>1604616972923</created>
@@ -135,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604956696097</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="видео №39">
+      <created>1604963218541</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604963218541</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,9 +170,18 @@
     <MESSAGE value="видео №20. создан объект валидации" />
     <MESSAGE value="видео №30." />
     <MESSAGE value="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию" />
-    <option name="LAST_COMMIT_MESSAGE" value="видео №37. он перенес с 5.7 на 5.8. я пользую 8 версию" />
+    <MESSAGE value="видео №39" />
+    <option name="LAST_COMMIT_MESSAGE" value="видео №39" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="312" y="47" width="734" height="640" key="#Inspections" timestamp="1605011946330">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="312" y="47" width="734" height="640" key="#Inspections/0.0.1366.731@0.0.1366.731" timestamp="1605011946330" />
+    <state x="72" y="32" width="802" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605127921695">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="72" y="32" width="802" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.731@0.0.1366.731" timestamp="1605127921695" />
     <state x="397" y="160" width="564" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604611799976">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -174,10 +194,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="416" y="117" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604252792718" />
-    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604957430276">
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605042038280">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1604957430276" />
+    <state x="416" y="124" width="526" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1605042038280" />
     <state x="99" y="100" width="1168" height="532" key="DiffContextDialog" timestamp="1604913119018">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -190,14 +210,14 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state width="755" height="341" key="Git.Branch.Popup/0.0.1366.731@0.0.1366.731" timestamp="1604953008020" />
-    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog" timestamp="1604924656371">
+    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog" timestamp="1605009077295">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1604924656371" />
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604922143125">
+    <state x="357" y="79" width="749" height="576" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1605009077295" />
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604963225185">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604922143125" />
+    <state x="278" y="83" width="802" height="568" key="Vcs.Push.Dialog.v2/0.0.1366.731@0.0.1366.731" timestamp="1604963225185" />
     <state x="380" y="106" width="606" height="520" key="find.popup" timestamp="1604958802387">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
@@ -206,10 +226,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="405" y="138" width="547" height="458" key="refactoring.ChangeSignatureDialog/0.0.1366.731@0.0.1366.731" timestamp="1604921766966" />
-    <state x="346" y="52" key="search.everywhere.popup" timestamp="1604915965890">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1605043892781">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="346" y="52" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1604915965890" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1605043892781" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

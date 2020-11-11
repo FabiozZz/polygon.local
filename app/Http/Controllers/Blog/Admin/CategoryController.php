@@ -60,7 +60,7 @@ class CategoryController extends BaseController
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param BlogCategoryCreateRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(BlogCategoryCreateRequest $request)
@@ -68,8 +68,6 @@ class CategoryController extends BaseController
         $data = $request->input();
         if (empty($data['slug'])) {
             $data['slug'] = Str::slug($data['title']);
-        } else {
-            $data['slug'] = Str::slug($data['slug']);
         }
 
         $item = new BlogCategory($data);
